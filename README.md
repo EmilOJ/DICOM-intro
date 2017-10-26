@@ -22,8 +22,7 @@ When one DICOM device, known as an *Application Entity* (AE), communicates with 
 More often than not a service includes some kind of data transfer. In the example above the request from the CT-scanner contains both a storage service request and an image object. Since this will always be the case for storage service requests it makes sense to always associate a storage request with an image object. This type of association is called a *Service-Object Pair* (SOP). There are many types of SOPs defined in the DICOM standard and they are grouped into *SOP Classes*.
 
 ![](/img/SCU_SCP_relationship.png)
-![](SCU_SCP_relationship.png)
-
+*Shows the SCU/SCP relationship between a CT-scanner and an image archive.*
 
 ## DICOM Elements
 DICOM elements are the basic building blocks of DICOM objects (DICOM files). If one wanted to DICOMize a simple JPEG image, the pixel data will be only one DICOM element out of many in the resulting DICOM object. Apart from the pixel data element, most DICOM elements can be seen as metadata about the image. An example of a DICOM element is shown here:
