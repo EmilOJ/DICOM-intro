@@ -21,7 +21,7 @@ There are more than 2000 standard attributes defined in the *DICOM Data Dictiona
 When one DICOM device, known as an *Application Entity* (AE), communicates with another it is said to provide or request a *service* to/from that device. Say a CT-scanner needs to send an image (an IOD/object) to a image archive for storage. It requests a storage service from the image archive and provides an image object together with the service request.
 More often than not a service includes some kind of data transfer. In the example above the request from the CT-scanner contains both a storage service request and an image object. Since this will always be the case for storage service requests it makes sense to always associate a storage request with an image object. This type of association is called a *Service-Object Pair* (SOP). There are many types of SOPs defined in the DICOM standard and they are grouped into *SOP Classes*.
 
-![](/img/SCU_SCP_relationship.png)
+![](img/SCU_SCP_relationship.png)
 *Shows the SCU/SCP relationship between a CT-scanner and an image archive.*
 
 ## DICOM Elements
